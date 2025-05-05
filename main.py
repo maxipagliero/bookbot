@@ -1,7 +1,6 @@
-from stats import count_words, character_count
+from stats import book_stats
 
 def main():
-    count_words("./books/frankenstein.txt")
-    character_count("./books/frankenstein.txt")
+    book_stats("./books/frankenstein.txt")
 
 main()
