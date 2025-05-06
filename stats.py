@@ -2,7 +2,6 @@ def book_stats(path_to_file):
     with open(path_to_file) as f:
         file_contents = f.read()
 
-
     letter_dict = {}
 
     for letter in file_contents.lower():
@@ -11,7 +10,7 @@ def book_stats(path_to_file):
                 letter_dict[letter] += 1
             else:
                 letter_dict[letter] = 1
-    
+
     items = list(letter_dict.items())
 
     items.sort(key=lambda item: item[1], reverse=True)
